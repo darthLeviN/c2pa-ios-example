@@ -6,6 +6,10 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		DBE8F7C92D5F6E4B00C92A1C /* SimpleC2PA in Frameworks */ = {isa = PBXBuildFile; productRef = DBE8F7C82D5F6E4B00C92A1C /* SimpleC2PA */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		DBCC73342D5F5B3E00F25285 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -52,6 +56,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DBE8F7C92D5F6E4B00C92A1C /* SimpleC2PA in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,6 +83,7 @@
 				DBCC73252D5F5B3C00F25285 /* c2pa_test */,
 				DBCC73362D5F5B3E00F25285 /* c2pa_testTests */,
 				DBCC73402D5F5B3E00F25285 /* c2pa_testUITests */,
+				DBE8F7C72D5F6E4B00C92A1C /* Frameworks */,
 				DBCC73242D5F5B3B00F25285 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -90,6 +96,13 @@
 				DBCC733D2D5F5B3E00F25285 /* c2pa_testUITests.xctest */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		DBE8F7C72D5F6E4B00C92A1C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -112,6 +125,7 @@
 			);
 			name = c2pa_test;
 			packageProductDependencies = (
+				DBE8F7C82D5F6E4B00C92A1C /* SimpleC2PA */,
 			);
 			productName = c2pa_test;
 			productReference = DBCC73232D5F5B3B00F25285 /* c2pa_test.app */;
@@ -195,6 +209,9 @@
 			);
 			mainGroup = DBCC731A2D5F5B3B00F25285;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				DBCC73502D5F5CF300F25285 /* XCRemoteSwiftPackageReference "simple-c2pa" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = DBCC73242D5F5B3B00F25285 /* Products */;
 			projectDirPath = "";
@@ -393,12 +410,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = c2pa_test/c2pa_test.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"c2pa_test/Preview Content\"";
 				DEVELOPMENT_TEAM = CMNZZ92926;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -422,12 +441,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = c2pa_test/c2pa_test.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"c2pa_test/Preview Content\"";
 				DEVELOPMENT_TEAM = CMNZZ92926;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -558,6 +579,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		DBCC73502D5F5CF300F25285 /* XCRemoteSwiftPackageReference "simple-c2pa" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://gitlab.com/guardianproject/proofmode/simple-c2pa";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.0.15;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		DBE8F7C82D5F6E4B00C92A1C /* SimpleC2PA */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = DBCC73502D5F5CF300F25285 /* XCRemoteSwiftPackageReference "simple-c2pa" */;
+			productName = SimpleC2PA;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = DBCC731B2D5F5B3B00F25285 /* Project object */;
 }

@@ -1,0 +1,15 @@
+{
+  "originHash" : "954002e9ca8042048be822202390949dfdb64cf71e6330c63b7f25851f54fd00",
+  "pins" : [
+    {
+      "identity" : "simple-c2pa",
+      "kind" : "remoteSourceControl",
+      "location" : "https://gitlab.com/guardianproject/proofmode/simple-c2pa",
+      "state" : {
+        "revision" : "03081bdad2137ddc005049d77b1add89fb1fa685",
+        "version" : "0.0.15"
+      }
+    }
+  ],
+  "version" : 3
+}
